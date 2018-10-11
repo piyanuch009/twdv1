@@ -1,0 +1,79 @@
+<div class="content-wrapper">
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{ regPage.title }}</h3>
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal">
+  
+            <div class="form-group">
+              <label for="inputName" class=" col-xs-12 col-md-3 control-label">{{ regPage.name }}</label>
+              <div class="name col-xs-12 col-md-2">
+                <select class="form-control">
+                  <option *ngFor="let titleName of regPage.tName let i = index" value="{{ i+1 }}">{{ titleName }}</option>
+                </select>
+              </div> 
+              <div class ="name col-xs-12 col-md-3">
+                <input type="text" class="form-control" id="inputFName" placeholder="{{ regPage.fName }}">
+              </div>
+              <div class="name col-xs-12 col-md-3">
+                <input type="text" class="form-control" id="inputLName" placeholder="{{ regPage.lName }}">
+              </div>
+            </div>
+  
+  
+            <div class="form-group">
+              <label for="inputCid" class="col-md-3 control-label">{{ regPage.cid }}</label>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="inputCid">
+              </div>
+            </div>
+  
+            <div class="form-group">
+                <label for="inputNationality" class="col-sm-3 control-label">{{ regPage.nationality }}</label>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="inputNationality" >
+                </div>
+              </div>
+  
+            <div class="form-group">
+              <label for="inputAddress" class="col-sm-3 control-label">{{ regPage.address }}</label>
+              <div class="col-sm-5">
+                <!-- <input type="text" class="form-control" id="inputAdd" placeholder="{{ regPage.Add }}"> -->
+                <textarea rows="4" cols="50" name="inputAddress" class="form-control" id="inputAddress" placeholder="{{ regPage.Add }}"></textarea>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <label for="inputTel" class="col-sm-3 control-label">{{ regPage.tel }}</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="inputTel" >
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <label for="inputEmail" class="col-sm-3 control-label">{{ regPage.email }}</label>
+              <div class="col-sm-4">
+                <input type="email" class="form-control" id="inputEmail">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">{{ regPage.password }}</label>
+              <div class="col-sm-4">
+                <input type="password" class="form-control" id="inputPassword3" >
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>

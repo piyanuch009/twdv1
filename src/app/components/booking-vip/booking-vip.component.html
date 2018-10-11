@@ -1,0 +1,225 @@
+<div class="content-wrapper">
+    <section class="content">
+      <div class="panel panel-default">
+  
+        <div class="panel-body">
+          <div class="check row">
+            <!-----เพิ่มปฏิทิน-->
+  
+            <div class="col-xs-3 col-md-3">
+              check-in:
+              <input class="form-control" type="date" name="bday">
+            </div>
+            <div class="col-xs-3 col-md-3">
+              check-out:
+              <input class="form-control" type="date" name="bday">
+            </div>
+  
+            <!-----เพิ่มปฏิทิน-->
+  
+  
+            
+          </div>
+        </div>
+      </div>
+  
+  
+  
+      <div class="panel panel-default">
+  
+        <div class="panel-body">
+  
+          <div class="booking-body-block row">
+            <div class="table col-md-6">
+              <p>ห้องพักราคาประหยัด</p>
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+  
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="{{bookPage.imgSave1}}">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+  
+                  <div class="item">
+                    <img src="{{bookPage.imgSave2}}">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+  
+                  <div class="item">
+                    <img src="{{bookPage.imgSave3}}">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <!-- Controls -->
+                <!--
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              -->
+              </div>
+            </div>
+  
+            <div class="table1 col-md-6">
+              <p>รายละเอียด</p>
+              <div class="doc row">
+                <p><i class="fa fa-hand-o-right"></i> สิ่งอำนวยความสะดวก</p>
+                <p>- เตียงนอน 6 ฟุต</p>
+                <p>- ทวี</p>
+                <p>- ตู้เย็น</p>
+                <p>- เครื่องทำน้ำอุ่น</p>
+                <p>- ตู็เสื้อ</p>
+                <p>- ฟรี wifi</p>
+                <p>- ที่จอดรถส่วนตัว</p>
+  
+  
+              </div>
+            </div>
+  
+            <div class="table2 col-md-6">
+              <p>ผู้เข้าพัก</p>
+              <div class="doc row">
+                <p><i class="fa fa-user"></i> <br>
+                   ไม่เกิน 3 คน/ห้อง</p>
+              </div>
+            </div>
+  
+            <div class="table2 col-md-6">
+              <p>ห้อง</p>
+  
+              <div class="col-xs-12 col-md-12">
+                <select class="form-control">
+                  <option *ngFor="let NumRoom of bookPage.no let i = index" value="{{ i+1 }}">{{ NumRoom }}</option>
+                </select>
+              </div>
+  
+            </div>
+  
+            <div class="table3 col-md-6">
+              <p>ราคา</p>
+              <div class="doc row">
+                <p>600฿</p>
+              </div>
+            </div>
+  
+            
+            
+  
+          </div>
+  
+  
+          <div class="booking-body-block row">
+            <div class="table col-md-6">
+              <p>ห้องพัก VIP</p>
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+  
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="{{bookPage.imgVip1}}">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+  
+                  <div class="item">
+                    <img src="{{bookPage.imgVip2}}">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+  
+                  <div class="item">
+                    <img src="{{bookPage.imgVip3}}">
+                    <div class="carousel-caption">
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <!-- Controls -->
+                <!--
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                -->
+              </div>
+            </div>
+  
+            <div class="table1 col-md-6">
+              <p>รายละเอียด</p>
+              <div class="doc row">
+                <p><i class="fa fa-hand-o-right"></i>สิ่งอำนวยความสะดวก</p>
+                <p>- เตียงนอน 6 ฟุต</p>
+                <p>- ทวี</p>
+                <p>- ตู้เย็น</p>
+                <p>- เครื่องทำน้ำอุ่น</p>
+                <p>- ตู็เสื้อ</p>
+                <p>- ฟรี wifi</p>
+                <p>- เฟอร์นิเจอร์</p>
+                <p>- ที่จอดรถส่วนตัว</p>
+              </div>
+            </div>
+  
+            <div class="table2 col-md-6">
+              <p>ผู้เข้าพัก</p>
+              <div class="doc row">
+                  <p><i class="fa fa-user"></i> <br>
+                    ไม่เกิน 3 คน/ห้อง</p>
+              </div>
+            </div>
+  
+            <div class="table2 col-md-6">
+              <p>ห้อง</p>
+  
+              <div class="col-xs-12 col-md-12">
+                <select class="form-control">
+                  <option *ngFor="let NumRoom of bookPage.num let i = index" value="{{ i+1 }}">{{ NumRoom }}</option>
+                </select>
+              </div>
+  
+            </div>
+  
+            <div class="table3 col-md-6">
+              <p>ราคา</p>
+              <div class="doc row">
+                <p>1,000฿</p>
+              </div>
+            </div>
+  
+            
+  
+  
+          </div>
+  
+  <p>222222222222</p>
+        </div>
+      </div>
+  
+    </section>
+  </div>

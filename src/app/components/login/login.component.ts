@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
 
   onClickSubmit(){
     if (this.mUsername == "piyanut@support.com" && this.mPassword == "1234"){
-      this.router.navigate(["/dashboard"])
+      this.router.navigate(["/room"])
     }else{
       window.alert("Login Failed");
     }

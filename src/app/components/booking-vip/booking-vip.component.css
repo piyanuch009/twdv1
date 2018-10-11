@@ -1,0 +1,52 @@
+.booking-body-block{
+    border: red solid 1px;
+    margin: 5px;
+    padding: 25px 25px 25px 10px;
+    height: 350px;
+    width: 850px;
+}
+
+
+
+.button{
+    padding: 19px 15px 15px 10px;
+}
+
+.check{
+    margin-left: 90px;
+}
+
+.table{
+    margin-left: 15px;
+    border: rgba(199, 198, 199, 0.986) solid 1px;
+    height: 300px;
+    width: 250px;
+    
+}
+.doc{
+    margin: 5px;
+}
+
+.table1{
+    border: rgba(199, 198, 199, 0.986) solid 1px;
+    height: 300px;
+    width: 180px;
+}
+
+.table2{
+    border: rgba(199, 198, 199, 0.986) solid 1px;
+    height: 300px;
+    width: 130px;
+}
+
+.table3{
+    border:rgba(199, 198, 199, 0.986) solid 1px;
+    height: 300px;
+    width: 80px;
+}
+.table4
+{
+    border: rgba(199, 198, 199, 0.986) solid 1px ;
+    height: 300px;
+    width: 100px;
+}

@@ -1,0 +1,15 @@
+.abc{
+    border: rgb(187, 181, 181) solid 1px;
+    margin: 10px;
+    padding: 10px;
+    height: 500px;
+    background-color: white;
+
+}
+
+.table{
+    border: green solid 1px;
+    height: 200px;
+    width: 100px;
+    
+}

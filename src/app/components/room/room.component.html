@@ -7,31 +7,32 @@
     <div class="panel panel-primary">
       <div class="panel-body">
 
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="thumbnail">
-              <img src="{{ roomPage.saveRoom.imgSrc }}" alt="...">
-              <div class="caption">
-                <h3>{{ roomPage.saveRoom.title }}</h3>
-                <p>{{ roomPage.saveRoom.desc }}</p>
-                <p><a href="#" class="btn btn-danger" role="button">BOOK NOW</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6">
-            <div class="thumbnail">
-              <img src="{{ roomPage.vipRoom.imgSrc }}" alt="...">
-              <div class="caption">
-                <h3>{{ roomPage.vipRoom.title }}</h3>
-                <p>{{ roomPage.vipRoom.desc }}</p>
-                <p><a href="#" class="btn btn-danger" role="button">BOOK NOW</a></p>
-              </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="thumbnail">
+            <img src="{{ roomPage.vipRoom.imgSrc }}" alt="...">
+            <div class="caption">
+              <h3>{{ roomPage.vipRoom.title }}</h3>
+              <p class="text-justify">{{ roomPage.vipRoom.desc }}</p>
+              <p><a routerLink="/booking-vip" class="btn btn-danger" role="button">View</a></p>
             </div>
           </div>
         </div>
 
+        <div class="row">
+          <div class="col-md-6 col-xs-12">
+            <div class="thumbnail">
+              <img src="{{ roomPage.saveRoom.imgSrc }}" alt="...">
+              <div class="caption">
+                <h3>{{ roomPage.saveRoom.title }}</h3>
+                <p class="text-justify">{{ roomPage.saveRoom.desc }}</p>
+                <p><a routerLink="/booking-save" class="btn btn-danger" role="button">View</a></p>
+              </div>
+            </div>
+          </div>
 
+        </div>
+
+        <p><a routerLink="/booking-vip" class="btn btn-danger" role="button">BOOK NOW</a></p>
       </div>
     </div>
 
